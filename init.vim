@@ -139,13 +139,6 @@ noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 " Open Startify
 "noremap <LEADER>st :Startify<CR>
 
-" Undo operations
-noremap l u
-
-" Insert Key
-noremap k i
-noremap K I
-
 " make Y to copy till the end of the line
 nnoremap Y y$
 
@@ -173,31 +166,9 @@ noremap <silent> <LEADER>o za
 noremap \g :Git 
 noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
 
-
-" ===
-" === Cursor Movement
-" ===
-" New cursor movement (the default arrow keys are used for resizing windows)
-"     ^
-"     u
-" < n   i >
-"     e
-"     v
-noremap <silent> u k
-noremap <silent> n h
-noremap <silent> e j
-noremap <silent> i l
-noremap <silent> gu gk
-noremap <silent> ge gj
-
 " U/E keys for 5 times u/e (faster navigation)
-noremap <silent> U 5k
-noremap <silent> E 5j
-
-" N key: go to the start of the line
-noremap <silent> N 0
-" I key: go to the end of the line
-noremap <silent> I $
+noremap <silent> K 5k
+noremap <silent> J 5j
 
 " Faster in-line navigation
 noremap W 5w
